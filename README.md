@@ -1,6 +1,7 @@
-![Logo](https://picgo-1258602555.cos.ap-nanjing.myqcloud.com/icon.png)
+# latex2lambda
 
-# [latex2sympy2](https://github.com/OrangeX4/latex2sympy)
+The latex2lambda is adapted from [latex2sympy2](https://github.com/OrangeX4/latex2sympy), which is an adaptation from [augustt198/latex2sympy](https://github.com/augustt198/latex2sympy) and [purdue-tlt / latex2sympy](https://github.com/purdue-tlt/latex2sympy).
+
 
 ## About
 

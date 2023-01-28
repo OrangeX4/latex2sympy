@@ -10,8 +10,8 @@
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#authors">Authors</a></li>
   <li><a href="#license">License</a></li>
-  <li><a href="#insights">Insights</a></li>
   <li><a href="#acknowledgments">Acknowledgments</a></li>
+  <li><a href="#insights">Insights</a></li>
 </ol>
 
 🚧 *under construction* 🚧
@@ -92,12 +92,12 @@ If you want to add a new grammar, you can fork the code from [OrangeX4/latex2sym
 [GNU General Public License](./LICENSE) © 2023. See source [reference](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 
+## Acknowledgments
+
+🚧 *under construction* 🚧
+
+
 ## Insights
 
 
 ![Alt](https://repobeats.axiom.co/api/embed/d2e139e0ba04862d79bca8e35abaa9ad835bd297.svg "Repobeats analytics image")
-
-
-## Acknowledgments
-
-🚧 *under construction* 🚧

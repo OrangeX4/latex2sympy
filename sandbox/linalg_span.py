@@ -1,5 +1,6 @@
 from latex2sympy import process_sympy
 import sys
+
 sys.path.append("..")
 
 latex = "\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}"

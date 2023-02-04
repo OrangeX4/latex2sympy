@@ -3,8 +3,8 @@ import pytest
 from sympy import Symbol
 
 epsilon_upper = Symbol('char"000190', real=True)
-epsilon_lower = Symbol('epsilon', real=True)
-varepsilon = Symbol('varepsilon', real=True)
+epsilon_lower = Symbol("epsilon", real=True)
+varepsilon = Symbol("varepsilon", real=True)
 
 
 def test_greek_epsilon():
@@ -16,4 +16,4 @@ def test_greek_epsilon_upper():
 
 
 def test_greek_varepsilon():
-    assert_equal('\\varepsilon', varepsilon)
+    assert_equal("\\varepsilon", varepsilon)

@@ -1,9 +1,10 @@
 from latex2sympy import process_sympy
 from sympy import *
 import sys
+
 sys.path.append("..")
 
-theta = Symbol('theta', real=True)
+theta = Symbol("theta", real=True)
 
 latex = "\\begin{matrix}1&2\\\\3&4\\end{matrix}"
 math = process_sympy(latex)
@@ -41,6 +42,8 @@ latex = "2\\cdot\\theta\\begin{matrix}x\\\\y\\end{matrix} + \\begin{matrix}2\\\\
 math = process_sympy(latex)
 print("latex: %s to math: %s" % (latex, math))
 
-latex = "\\theta\\begin{matrix}1\\\\3\\end{matrix} - \\begin{matrix}-1\\\\2\\end{matrix}"
+latex = (
+    "\\theta\\begin{matrix}1\\\\3\\end{matrix} - \\begin{matrix}-1\\\\2\\end{matrix}"
+)
 math = process_sympy(latex)
 print("latex: %s to math: %s" % (latex, math))

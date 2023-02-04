@@ -3,7 +3,7 @@ import pytest
 
 
 def pytest_generate_tests(metafunc):
-    metafunc.parametrize('s', metafunc.cls.BAD_STRINGS)
+    metafunc.parametrize("s", metafunc.cls.BAD_STRINGS)
 
 
 class TestAllBad(object):
@@ -13,14 +13,12 @@ class TestAllBad(object):
         ")",
         # "a / b /",
         "\\frac{d}{dx}",
-        "(\\frac{d}{dx})"
-        "\\sqrt{}",
+        "(\\frac{d}{dx})" "\\sqrt{}",
         "\\sqrt",
         "{",
         "}",
         # "1.1.1",
-        "\\mathit{TEST}"
-        "\\frac{2}{}",
+        "\\mathit{TEST}" "\\frac{2}{}",
         "\\frac{}{2}",
         "\\int",
         # "1 +",
@@ -32,8 +30,7 @@ class TestAllBad(object):
         # "a // b",
         # "a \\cdot \\cdot b",
         # "a \\div \\div b",
-        "a\\mod \\begin{matrix}b\\end{matrix}"
-        "|",
+        "a\\mod \\begin{matrix}b\\end{matrix}" "|",
         "||x|",
         "\\lfloor x",
         "\\lfloor a \\rceil",
@@ -51,7 +48,12 @@ class TestAllBad(object):
         # "\\cos 1 \\cos",
         # "\\gcd(3)",
         # "\\lcm(2)",
-        "@", "#", "$", "%", "&", "*",
+        "@",
+        "#",
+        "$",
+        "%",
+        "&",
+        "*",
         "\\",
         "~",
         "\\frac{(2 + x}{1 - x)}",
@@ -62,7 +64,7 @@ class TestAllBad(object):
         "a\\%",
         "\\%100",
         # dollar signs without numbers after
-        "\\$"
+        "\\$",
     ]
 
     def test_bad_string(self, s):

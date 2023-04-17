@@ -51,6 +51,13 @@ This project is a part of the [Lion Of Graphs](https://github.com/MrToino/lion-o
 
 If you want to add a new grammar, you can fork the code from [OrangeX4/latex2sympy](https://github.com/OrangeX4/latex2sympy).
 
+- To modify parser grammar, view the existing structure in `PS.g4`.
+- To modify the action associated with each grammar, look into `latex2sympy.py`
+
+To add new features to this project, you can fork the code from [MrToino/latex2lambda](https://github.com/MrToino/latex2lambda).
+
+Contributors are welcome! Feel free to open a pull request or an issue.
+
 🚧 *under construction* 🚧
 
 ## Authors

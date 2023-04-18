@@ -2,10 +2,10 @@ from .context import assert_equal, _Add, _Mul, _Pow
 import pytest
 from sympy import binomial, Symbol
 
-x = Symbol('x', real=True)
-y = Symbol('y', real=True)
-theta = Symbol('theta', real=True)
-gamma = Symbol('gamma', real=True)
+x = Symbol("x", real=True)
+y = Symbol("y", real=True)
+theta = Symbol("theta", real=True)
+gamma = Symbol("gamma", real=True)
 
 
 def test_binomial_numeric():
@@ -21,7 +21,10 @@ def test_binomial_greek_symbols():
 
 
 def test_binomial_expr():
-    assert_equal("\\binom{16+2}{\\frac{4}{2}}", binomial(_Add(16, 2), _Mul(4, _Pow(2, -1)), evaluate=False))
+    assert_equal(
+        "\\binom{16+2}{\\frac{4}{2}}",
+        binomial(_Add(16, 2), _Mul(4, _Pow(2, -1)), evaluate=False),
+    )
 
 
 def test_choose_numeric():

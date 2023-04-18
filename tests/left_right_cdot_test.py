@@ -2,7 +2,7 @@ from .context import assert_equal
 import pytest
 from sympy import sin, Symbol
 
-x = Symbol('x', real=True)
+x = Symbol("x", real=True)
 
 
 def test_left_right_cdot():

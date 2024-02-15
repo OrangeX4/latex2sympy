@@ -68,6 +68,10 @@ def latex2sympy(sympy: str, variable_values={}):
     sympy = sympy.replace(r'\quad', ' ', -1).replace(r'\qquad', ' ', -1).replace(r'~', ' ', -1).replace(r'\,', ' ', -1)
     # Remove $
     sympy = sympy.replace(r'$', ' ', -1)
+    # Remove /bigl( /bigr)
+    sympy = sympy.replace(r"\bigl(","(").replace(r"\bigr)",")")
+    # Remove \left( \right)
+    sympy = sympy.replace(r"\left(","(").replace(r"\right)",")")
 
     # variable values
     global VARIABLE_VALUES

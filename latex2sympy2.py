@@ -685,8 +685,8 @@ def convert_atom(atom):
         except (TypeError, ValueError):
             return sympy.Number(s)
     elif atom.DIFFERENTIAL():
-        var = get_differential_var(atom.DIFFERENTIAL())
-        return sympy.Symbol('d' + var.name, real=is_real)
+        vari = get_differential_var(atom.DIFFERENTIAL())
+        return sympy.Symbol('d' + vari.name, real=is_real)
     elif atom.mathit():
         text = rule2text(atom.mathit().mathit_text())
         return sympy.Symbol(text, real=is_real)
@@ -1035,13 +1035,13 @@ def handle_sum_or_prod(func, name):
 def handle_limit(func):
     sub = func.limit_sub()
     if sub.LETTER_NO_E():
-        var = sympy.Symbol(sub.LETTER_NO_E().getText(), real=is_real)
+        vari = sympy.Symbol(sub.LETTER_NO_E().getText(), real=is_real)
     elif sub.GREEK_CMD():
-        var = sympy.Symbol(sub.GREEK_CMD().getText()[1:].strip(), real=is_real)
+        vari = sympy.Symbol(sub.GREEK_CMD().getText()[1:].strip(), real=is_real)
     elif sub.OTHER_SYMBOL_CMD():
-        var = sympy.Symbol(sub.OTHER_SYMBOL_CMD().getText().strip(), real=is_real)
+        vari = sympy.Symbol(sub.OTHER_SYMBOL_CMD().getText().strip(), real=is_real)
     else:
-        var = sympy.Symbol('x', real=is_real)
+        vari = sympy.Symbol('x', real=is_real)
     if sub.SUB():
         direction = "-"
     else:
@@ -1049,7 +1049,7 @@ def handle_limit(func):
     approaching = convert_expr(sub.expr())
     content = convert_mp(func.mp())
 
-    return sympy.Limit(content, var, approaching, direction)
+    return sympy.Limit(content, vari, approaching, direction)
 
 
 def handle_exp(func):

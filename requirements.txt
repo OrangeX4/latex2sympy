@@ -4,6 +4,6 @@
 #
 #    pip-compile requirements.in
 #
-antlr4-python3-runtime==4.7.2
+antlr4-python3-runtime==4.11.1
 mpmath==1.1.0             # via sympy
 sympy==1.4

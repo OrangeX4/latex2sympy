@@ -6,4 +6,4 @@ rel_path="$(dirname "$rdir")"
 # Change to that path and run the file
 cd $rel_path
 
-java -jar antlr-4.7.2-complete.jar PS.g4 -o gen
+java -jar antlr-4.11.1-complete.jar PS.g4 -o gen
